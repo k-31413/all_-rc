@@ -1,1 +1,41 @@
 #k_bash 
+C:\Users\V\Downloads\vimrc_all_rc>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\V\Downloads\vimrc_all_rc>git remote -v
+
+C:\Users\V\Downloads\vimrc_all_rc>git remote add origin https://github.com/k-31413/all_-rc.git
+
+C:\Users\V\Downloads\vimrc_all_rc>git remote -v
+origin  https://github.com/k-31413/all_-rc.git (fetch)
+origin  https://github.com/k-31413/all_-rc.git (push)
+
+C:\Users\V\Downloads\vimrc_all_rc>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\V\Downloads\vimrc_all_rc>git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 107.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/k-31413/all_-rc.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\V\Downloads\vimrc_all_rc>git push
+Everything up-to-date
